@@ -2,7 +2,7 @@
 // которая будет находить произведение двух матриц.
 
 Console.Clear();
-Console.WriteLine("Введите размер массив m x n:");
+Console.WriteLine("Введите размер массива m x n:");
 int m = inputNumber("m = ");
 int n = inputNumber("n = ");
 int[,] array = new int[m, n];
@@ -17,7 +17,8 @@ PrintArray(secondArray);
 int[,] resultArray = new int[m, n];
 if (array.GetLength(0) != secondArray.GetLength(1))
 {
-    Console.WriteLine(" Нельзя перемножить ");
+    Console.WriteLine("\nНельзя перемножить!\n");
+    Console.WriteLine();
     return;
 }
 for (int i = 0; i < array.GetLength(0); i++)
